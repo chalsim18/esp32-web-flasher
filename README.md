@@ -36,3 +36,6 @@ Frequency: 40MHz | 80MHz | 120MHz
 # Erase options:
 [ ] Full chip erase
 [ ] Only affected sectors
+
+
+## To be Continued
