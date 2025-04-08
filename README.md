@@ -21,7 +21,7 @@ A browser-based tool for flashing ESP32 microcontrollers using WebSerial—no in
 ## 🛠️ Development Setup
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/esp32-web-flasher.git
+git clone https://github.com/chalsim18/esp32-web-flasher.git
 cd esp32-web-flasher
 
 # Install dependencies
