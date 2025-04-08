@@ -1,29 +1,38 @@
-ESP32 Web Flasher
+# ESP32 Web Flasher 🌐⚡
 
-This project provides a web-based interface for flashing ESP32 microcontrollers directly from your browser. It eliminates the need for traditional flashing tools by using WebSerial API to communicate with the ESP32.
+A browser-based tool for flashing ESP32 microcontrollers using the WebSerial API. No installs required—works directly in Chrome, Edge, or Firefox!
 
-Features
-  Web-based interface accessible from any modern browser
-  No additional software installation required
-  Supports flashing ESP32 with:
-    Firmware binaries (.bin files)
-    Partition tables
-    Bootloaders
-  Progress tracking during flash operations
-  Serial monitor for debugging
-  Works with most ESP32 variants (ESP32, ESP32-S2, ESP32-S3, ESP32-C3)
 
-Requirements
-  Modern browser with WebSerial support (Chrome/Edge 89+, Firefox 101+)
-  ESP32 board with USB connectivity
-  Firmware binary file to flash
 
-Usage
-  Connect your ESP32 to your computer via USB
-  Open the ESP32 Web Flasher in your browser
-  Click "Connect" and select your ESP32 from the serial port list
-  Select the firmware file you want to flash
-  Configure flash options (address, speed, etc.) if needed
-  Click "Flash" to start the process
-  Wait for completion and reset your ESP32
+## ✨ Features
+- **Zero-Install** - Runs entirely in your browser
+- **Cross-Platform** - Works on Windows, Mac, Linux, ChromeOS
+- **Full Flashing Suite**:
+  - Flash firmware binaries (.bin)
+  - Upload partition tables & bootloaders
+  - Custom flash addresses
+- **Serial Monitor** - Built-in console for debugging
+- **Progress Tracking** - Real-time flash progress with verification
+- **ESP32 Family Support**:
+  - ESP32
+  - ESP32-S2/S3
+  - ESP32-C3/C6
 
+## 🚀 Quick Start
+1. **Connect** your ESP32 via USB
+2. **Visit** [flasher.example.com](https://flasher.example.com) *(replace with your URL)*
+3. **Select** your board from the serial port list
+4. **Upload** your firmware.bin file
+5. **Flash!** (typical process takes 15-30 seconds)
+
+## 🛠️ Advanced Options
+```bash
+# Flash at specific address (hex):
+Address: 0x10000
+
+# Adjust flash speed:
+Frequency: 40MHz | 80MHz | 120MHz
+
+# Erase options:
+[ ] Full chip erase
+[ ] Only affected sectors
