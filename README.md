@@ -1,46 +1,34 @@
 # ESP32 Web Flasher 🌐⚡
 
-A browser-based tool for flashing ESP32 microcontrollers using the WebSerial API. No installs required—works directly in Chrome, Edge, or Firefox!
+A browser-based tool for flashing ESP32 microcontrollers using WebSerial—no installs needed!
 
 
 
 ## ✨ Features
-- **Zero-Install** - Runs entirely in your browser
-- **Cross-Platform** - Works on Windows, Mac, Linux, ChromeOS
-- **Full Flashing Suite**:
-  - Flash firmware binaries (.bin)
-  - Upload partition tables & bootloaders
-  - Custom flash addresses
-- **Serial Monitor** - Built-in console for debugging
-- **Progress Tracking** - Real-time flash progress with verification
-- **ESP32 Family Support**:
-  - ESP32
-  - ESP32-S2/S3
-  - ESP32-C3/C6
+- **Zero-Install** – Works directly in Chrome/Edge/Firefox  
+- **Firmware Flashing** – Upload `.bin` files via WebSerial  
+- **Serial Monitor** – Real-time debug output  
+- **Multi-File Support** – Flash bootloader/partitions at custom offsets  
+- **Progress Tracking** – Visual feedback during operations  
+- **ESP32 Family Support** – Works with ESP32, ESP32-S2/S3/C3  
 
 ## 🚀 Quick Start
-1. **Connect** your ESP32 via USB
-2. **Visit** [flasher.example.com](https://flasher.example.com) *(replace with your URL)*
-3. **Select** your board from the serial port list
-4. **Upload** your firmware.bin file
-5. **Flash!** (typical process takes 15-30 seconds)
+1. **Connect** your ESP32 via USB  
+2. **Visit** [flasher.example.com](https://flasher.example.com) *(or run locally)*  
+3. **Select** your board from serial ports  
+4. **Upload** firmware and click **Flash!**  
 
-## 🛠️ Advanced Options
+## 🛠️ Development Setup
 ```bash
-# Flash at specific address (hex):
-Address: 0x10000
-
-# Adjust flash speed:
-Frequency: 40MHz | 80MHz | 120MHz
-
-# Erase options:
-[ ] Full chip erase
-[ ] Only affected sectors
-
-
-🧑💻 Developer Setup
-```bash
-git clone https://github.com/yourrepo/esp32-web-flasher.git
+# Clone repo
+git clone https://github.com/yourusername/esp32-web-flasher.git
 cd esp32-web-flasher
+
+# Install dependencies
 npm install
-npm start  # dev server @ http://localhost:3000
+
+# Start dev server (http://localhost:3000)
+npm start
+
+# Production build
+npm run build
