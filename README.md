@@ -38,4 +38,9 @@ Frequency: 40MHz | 80MHz | 120MHz
 [ ] Only affected sectors
 
 
-## To be Continued
+🧑💻 Developer Setup
+```bash
+git clone https://github.com/yourrepo/esp32-web-flasher.git
+cd esp32-web-flasher
+npm install
+npm start  # dev server @ http://localhost:3000
