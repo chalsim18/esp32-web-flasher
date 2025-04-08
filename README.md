@@ -32,3 +32,46 @@ npm start
 
 # Production build
 npm run build
+
+
+🌍 Browser Support
+Browser	WebSerial Support
+Chrome 89+	✅
+Edge 89+	✅
+Firefox 101+	✅
+Safari	❌
+📚 Technical Details
+Frontend: React + Vite
+
+Flashing Protocol: ESP-ROM bootloader commands
+
+Web APIs: WebSerial, File API, Web Workers
+
+Compatibility: Works with esptool.py compatible binaries
+
+⚠️ Limitations
+~50% slower than native esptool.py
+
+Requires user permission for each serial connection
+
+No Safari support (Apple restricts WebSerial)
+
+🤝 Contributing
+Found a bug? Want a feature?
+→ Open an Issue
+→ Submit a PR
+
+📜 License
+MIT © CHRISTIAN I. CABRERA - See LICENSE
+
+Like this project? Give it a ⭐ on GitHub!
+
+Copy
+
+### Key Improvements:
+1. **Visual Hierarchy** – Emojis and headers organize content  
+2. **Browser Support Table** – Clear compatibility info  
+3. **Tech Stack Section** – Helps contributors understand the codebase  
+4. **Call-to-Action** – Encourages GitHub stars/contributions  
+5. **Concise Limitations** – Manages user expectations  
+
